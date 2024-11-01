@@ -1,0 +1,57 @@
+---
+title: New Portfolio
+date: '2024-10-28T00:00:00'
+description: About my new portfolio site and why I decided to make it
+---
+
+# What's New?
+
+To start off let's go over the new features of this site over the last one.
+<br></br>
+
+## Blog Posts
+
+Probably the most obvious of them all is the introduction of blog posts.<br></br>
+These allow me to share about my experiences and ideas while providing a more human elemnt to the site.<br></br>
+I've implemented these using contentlayer to ensure that all of the posts are compiled at build time to ensure as little performance impact on the client as possible.<br></br>
+I'm very happy with how this has turned out and I'm looking to post with relative frequency.
+<br></br>
+
+## Improved Parallax
+
+Parallax has become a very popular effect in modern websites and because of this I wanted to include it in my original portfolio.<br></br>
+Not completely understanding how it worked I used a library called react-scroll-parallax. The implementation was not the greatest and contained a few bugs including one which caused it to completely break when refreshing anywhere not at the very top of the page.<br></br>
+In this site I decided to try to implement my own parallax method which involved just a simple exponential equation tied to the Y-axis scroll value of the page. I could simply put this as one line in the elements style attribute and that was it. This works great and really tought me the importance of hooks and trying to implement something yourself first.
+<br></br>
+
+<Image src='/images/posts/parallax-bug.png' alt='Parallax bug from first portfolio site'></Image>
+
+## Clean and Modern Design
+
+One thing I grew to dislike about my site is that when I was making it I tried to be a little too unique and "artsy".<br></br>
+While it didn't look horrible the UX and functionality of the website really suffered in my opinion. So when creating this site I decided to go with a look that more accurately reflects what a modern site would include. A clean, minimalist design made for quick navigation and easy reading by the user.
+<br></br><br></br><br></br>
+
+# Why Change?
+
+While new features are cool what ultimately made me want to do a complete redesign instead of simply adding these features to the last site?
+<br></br>
+
+## Optimization
+
+The original site contained a lot of unnecessary libraries and animations that would've been difficult to clean-up. Multiple animation libraries were used which heavily impacted performance. This was because I made the mistake of using the development of the site to learn these libraries oblivious to the fact that it was negatively impacting the speed and function of the site.
+<br></br>
+
+## Be Patient, I'm Learning
+
+Like stated before while making the first site I was still in the proccess of learning some key fundamentals. Because of this going through the code and structure of it was a nightmare. After spending a few hours reviewing my work I decided that trying to salvage it would only lead to headaches and slow development.
+<br></br>
+
+## Harder, Better, Faster, Stronger
+
+Since making the first site I feel like my experience as a developer has increased significantly. Despite being only a couple months later, recently I've discovered a lot of developers go through a sort of "golden age" in which core fundamentals start to click and everything else seems to become a lot easier to understand. I beleive I've recently began to experience this and because of that I feel more confident in my work and ability to create something worth presenting to others.
+<br></br><br></br><br></br>
+
+# Conclusion
+
+All in all I am super proud of my work with this site and beleive I made the right decision to redesign rather than add onto my last one. I'm confident it will help me display my work and hopefully impress recruiters. I've left my last site public on my [Github](https://github.com/43Goose/portfolio/tree/master) in hopes of displaying how much I've progressed in such a short amount of time. Who knows, maybe in another month I'll do another redesign :).
